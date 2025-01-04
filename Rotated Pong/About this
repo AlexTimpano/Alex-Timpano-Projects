@@ -1,0 +1,11 @@
+#Rotated pong
+
+A variant of pong made using the Pygame engine. Allows the user to rotate their paddle and move it on the x axis 
+
+
+Notable implemented features include:
+
+Collision detection using masks: More advanced collision detection making use of masks for pixel perfect collision. This is essential for allowing collision with a rotated paddle 
+
+More math: In comparison to the simple math required for my pong game,the mathematics required to make this game work well are much more complex
+Normal lines and vector reflection are used to determine the new velocity of the ball upon impact
