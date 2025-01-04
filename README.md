@@ -2,7 +2,7 @@ A collection of my personal projects made over several years. These projects rep
 
 KEY ITEMS
 
-Amongst the Stars(old): The first, text-based iteration of a colony builder game, made in python in grade 12
+Spaceegame: The first, text-based iteration of a colony builder game, made in python in grade 12
 
 Amongst the Stars(New): Inspired by my first game, rebulid years later. Has actual graphics and expanded game mechanics. Built using Pygame
 
