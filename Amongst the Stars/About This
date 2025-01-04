@@ -1,0 +1,15 @@
+#ABout this project
+
+Amongst the Stars is a simple game where you have to represent a faction of your choice in a colonization effort of your chosen planet. Your goal is to survive 50 days 
+without support from Earth to prove that your colony can be self-sufficient for large periods of time. 
+
+Notable implemented features include:
+
+Faction and planet system: Your chosen faction and planet will provide modifiers to your resource production. These can be crucial to your survival strategy 
+
+UI: A simple UI that displays information on available resources, allows users to build and deconstruct buildings, and see their current statistics
+
+Build and deconstruct buildings: You can construct and destroy a variety of buildings to produce resources. implemented a power consumption and maintenance system. Buildings now take time to build
+
+Simple 2D graphics: A step up from my purely text based version of this game. This game has actual graphics!
+

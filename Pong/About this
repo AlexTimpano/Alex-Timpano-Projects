@@ -1,0 +1,8 @@
+A simple game of pong made using the Pygame engine 
+
+Notable implemented features include:
+
+A scoring system: Keeps track of the score. First to 10 wins
+
+Collision detection using rects: Basic collision detection using rectangles.
+

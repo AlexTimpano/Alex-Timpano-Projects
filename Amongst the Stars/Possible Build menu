@@ -1,0 +1,135 @@
+class BuildMenu():
+    def __init__(self, x, y, image):
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        self.visible = False
+
+        self.buttons = [
+            Button(x, y, image1),
+            Button(x, y, image2),
+            # add more buttons here as needed
+        ]
+
+    def draw(self, surface, game_state):
+        if not self.visible:
+            return
+
+        for button in self.buttons:
+            if button.draw(surface, game_state):
+                # update the state of the game based on which button was clicked
+                if button == self.buttons[0]:
+                    game_state["build_menu_option_1_clicked"] = True
+                elif button == self.buttons[1]:
+                    game_state["build_menu_option_2_clicked"] = True
+                # add more conditions here as needed
+
+        surface.blit(self.image, (self.rect.x, self.rect.y))
+
+class DestroyMenu():
+    # add another menu class here as needed
+
+# create the build menu
+build_menu = BuildMenu(x, y, build_menu_image)
+
+# in the main loop
+while True:
+    # handle events
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    # update the game state
+    game_state = {
+        "construct_button_pressed": False,
+        "build_menu_visible": build_menu.visible,
+        "build_menu_option_1_clicked": False,
+        "build_menu_option_2_clicked": False,
+        # add more variables here as needed
+    }
+
+    if construct_button.draw(WIN):
+        game_state["construct_button_pressed"] = True
+
+    if build_menu_button.draw(WIN):
+        build_menu.visible = not build_menu.visible
+
+    # draw the screen
+    draw_screen(WIN, game_state)
+
+    # draw the build menu
+    build_menu.draw(WIN, game_state)
+
+    pygame.display.update()
+
+
+class Building():
+    def __init__(self, name, cost, production_cost, upkeep_cost):
+        self.name = name
+        self.cost = cost
+        self.production_cost = production_cost
+        self.upkeep_cost = upkeep_cost
+
+buildings = [
+    Building("Building 1", 100, 10, 5),
+    Building("Building 2", 200, 20, 10),
+    Building("Building 3", 300, 30, 15),
+    Building("Building 4", 400, 40, 20),
+    Building("Building 5", 500, 50, 25),
+]
+
+class BuildMenu():
+    def __init__(self, x, y, image, buildings):
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        self.visible = False
+
+        self.buttons = [
+            Button(x, y, image1),
+            Button(x, y, image2),
+            # add more buttons here as needed
+        ]
+
+        self.buildings = buildings
+
+    def draw(self, surface, game_state):
+        if not self.visible:
+            return
+
+        for i, building in enumerate(self.buildings):
+            # draw the building name
+            font = pygame.font.Font(None, 24)
+            text = font.render(building.name, True, (255, 255, 255))
+            text_rect = text.get_rect()
+            text_rect.topleft = (self.rect.x + 10, self.rect.y + 50 * i + 10)
+            surface.blit(text, text_rect)
+
+            # draw the building cost
+            font = pygame.font.Font(None, 24)
+            text = font.render(str(building.cost), True, (255, 255, 255))
+            text_rect = text.get_rect()
+            text_rect.topright = (self.rect.x + self.rect.width - 10, self.rect.y + 50 * i + 10)
+            surface.blit(text, text_rect)
+
+            # draw the building production cost
+            font = pygame.font.Font(None, 24)
+            text = font.render(str(building.production_cost), True, (255, 255, 255))
+            text_rect = text.get_rect()
+            text_rect.topleft = (self.rect.x + 10, self.rect.y + 50 * i + 30)
+            surface.blit(text, text_rect)
+
+            # draw the building upkeep cost
+            font = pygame.font.Font(None, 24)
+            text = font.render(str(building.upkeep_cost), True, (255, 255, 255))
+            text_rect = text.get_rect()
+            text_rect.topright = (self.rect.x + self.rect.width - 10, self.rect.y + 50 * i + 30)
+            surface.blit(text, text_rect)
+
+            # add a button to add the building to the list
+            button = Button(self.rect.x + self.rect.width - 100, self.rect.y + 50 * i + 10, button_image)
+            if button.draw(surface, game_state):
+                game_state["building_list"].append(building)
+
+        surface.blit(self.image, (self.rect.x, self.rect.y))
