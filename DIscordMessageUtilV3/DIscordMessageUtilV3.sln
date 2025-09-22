@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIscordMessageUtilV3", "DIscordMessageUtilV3.csproj", "{B2E24F81-391E-45F3-9B0A-CA4C9170DFF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2E24F81-391E-45F3-9B0A-CA4C9170DFF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E24F81-391E-45F3-9B0A-CA4C9170DFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E24F81-391E-45F3-9B0A-CA4C9170DFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E24F81-391E-45F3-9B0A-CA4C9170DFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A99B019-02A9-4D9C-A4C2-55E79F9B45A8}
+	EndGlobalSection
+EndGlobal

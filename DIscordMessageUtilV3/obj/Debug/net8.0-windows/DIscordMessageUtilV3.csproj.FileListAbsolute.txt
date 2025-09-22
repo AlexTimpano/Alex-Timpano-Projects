@@ -1,0 +1,16 @@
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.Form1.resources
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.csproj.GenerateResource.cache
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.AssemblyInfoInputs.cache
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.AssemblyInfo.cs
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.csproj.CoreCompileInputs.cache
+C:\Users\alext\source\repos\DIscordMessageUtilV3\bin\Debug\net8.0-windows\DIscordMessageUtilV3.exe
+C:\Users\alext\source\repos\DIscordMessageUtilV3\bin\Debug\net8.0-windows\DIscordMessageUtilV3.deps.json
+C:\Users\alext\source\repos\DIscordMessageUtilV3\bin\Debug\net8.0-windows\DIscordMessageUtilV3.runtimeconfig.json
+C:\Users\alext\source\repos\DIscordMessageUtilV3\bin\Debug\net8.0-windows\DIscordMessageUtilV3.dll
+C:\Users\alext\source\repos\DIscordMessageUtilV3\bin\Debug\net8.0-windows\DIscordMessageUtilV3.pdb
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.dll
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\refint\DIscordMessageUtilV3.dll
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.pdb
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\DIscordMessageUtilV3.genruntimeconfig.cache
+C:\Users\alext\source\repos\DIscordMessageUtilV3\obj\Debug\net8.0-windows\ref\DIscordMessageUtilV3.dll

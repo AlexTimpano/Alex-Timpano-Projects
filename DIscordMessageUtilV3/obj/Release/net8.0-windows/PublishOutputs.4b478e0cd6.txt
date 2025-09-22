@@ -1,0 +1,5 @@
+C:\Users\alext\Downloads\DIscordMessageUtilV3.exe
+C:\Users\alext\Downloads\DIscordMessageUtilV3.dll
+C:\Users\alext\Downloads\DIscordMessageUtilV3.deps.json
+C:\Users\alext\Downloads\DIscordMessageUtilV3.runtimeconfig.json
+C:\Users\alext\Downloads\DIscordMessageUtilV3.pdb
