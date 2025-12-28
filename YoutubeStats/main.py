@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 import re 
 
-
+#setup for youtube API
 load_dotenv()
 API_KEY = os.getenv("YOUTUBE_API_KEY")
 MAX_VIDEOS = 5  
@@ -11,7 +11,7 @@ MAX_VIDEOS = 5
 
 youtube = build("youtube", "v3", developerKey=API_KEY)
 
-
+#Cleans video titles, leaves only alphanumeric
 def clean_title(title):
 
     cleaned = re.sub(r'[^a-zA-Z0-9]', ' ', title)
@@ -33,7 +33,7 @@ def main():
 
     stat_results = get_stats(videoIDs)
 
-
+    #Compiles statistical information into video info for final results
     for i, stat in enumerate(stat_results):
         videos[i]["Upload date"] = stat["snippet"]["publishedAt"]
         videos[i]["views"] = stat["statistics"].get("viewCount", 0)
@@ -46,7 +46,7 @@ def main():
         print(video)
         print()
 
-
+#Use youtube API with paginination to exceed individual search limits and collect  bulk youtube videos from query
 def search_youtube(search_input, max_total=200):
     videos = []
     next_page_token = None
@@ -67,18 +67,18 @@ def search_youtube(search_input, max_total=200):
                 "videoTitle": item["snippet"]["title"]
             })
 
- 
+        #Move to next page
         next_page_token = results.get("nextPageToken")
         if not next_page_token:
             break
 
     return videos[:max_total]
 
-
+#Use video IDs to acquire deeper statistical information 
 def get_stats(videoIDs):
     stats = []
 
-    for i in range(0, len(videoIDs), 50):  
+    for i in range(0, len(videoIDs), 50):  #Get stats on 50 videos at a time 
         batch_ids = videoIDs[i:i+50]
         stat_request = youtube.videos().list(
             part="statistics, snippet",
@@ -89,6 +89,6 @@ def get_stats(videoIDs):
 
     return stats
 
-
+#Entry point
 if __name__ == "__main__":
     main()
